@@ -1,0 +1,269 @@
+/* Header and Nav */
+header{
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); /* Shifts it back by 50% of its width */
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    z-index: 100;
+    margin-top: 25px;
+    width: max-content; 
+    align-items: flex-start;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.logo img{
+    height: 200px;
+    display: block;
+}
+
+nav{
+    margin-left: 0px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline;
+    background-color: white;
+    padding: 30px 75px;
+    margin: 0px -0.1px;
+    transition: background-color 0.2s ease-in-out; /* Smooth transition */
+}
+
+nav ul li:hover {
+    background-color: #DDD;
+}
+
+li a{
+    font-family: "Archivo";
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Hero Image */
+
+.hero img{
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    padding: 0px;
+}
+
+.gradient{
+    position: static;
+    height: 180px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    transform: translate(-0%, -100%);
+    -ms-transform: translate(0%,-100%);
+}
+
+/* Introduction */
+.introduction{
+    background-color: white;
+    padding: 30px 0px;
+    margin-top: -180px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.ACG-logo{
+    height: 280px;
+    margin: 0px 80px;
+}
+
+.introduction p{
+    font-family: Archivo;
+    font-size: 32px;
+    text-align: center;
+    padding: 0px 20px;
+    width: 60%;
+}
+
+/* Collection */
+
+.collection{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.collection-img{
+    width: 60%;
+    height: 60%;
+    border-radius: 14px;
+    border: 7px solid black;
+    transition: border 0.2s ease-in-out;
+}
+
+.collection-img:hover{
+    border: 7px solid #F68026;
+}
+
+.collection-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-text h1{
+    font-family: "Bebas Neue";
+    font-size: 90px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px;
+    line-height: 95%;
+}
+
+.collection-text p{
+    font-family: Archivo;
+    font-size: 35px;
+    padding: 0px 120px;
+    text-align: center;
+}
+
+.collection-button{
+    font-family: Archivo;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 40.5px;
+    transition: font-size 0.2s ease-in-out;
+}
+
+.collection-button:hover{
+    font-size: 32px;
+}
+
+/* Catalogue and Gallery*/
+.catalogue{
+    margin: 80px 0px;
+}
+
+.catalogue h1{
+    
+    font-family: "Bebas Neue";
+    font-size: 90px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0px;
+    line-height: 95%;
+    margin-left: 8%;
+    
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container img{
+    width: 470px;
+    height: 600px;
+    object-fit: cover;
+    border: 7px solid black;
+    border-radius: 18px;
+    transition: border 0.2s ease-in-out;
+    filter: drop-shadow(10px 10px 6px #b7b7b7ac);
+}
+
+.container img:hover{
+    border: 7px solid #F68026;
+    cursor: pointer;
+}
+
+.container p{
+    font-family: Archivo;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Line */
+
+.line{
+    width: 85%;
+    height: 1px;
+    border-bottom: 6px solid black;
+    border-radius: 90px;
+    justify-self: center;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: left;
+}
+
+.footer-image{
+    width: 100%;
+    margin-top: -80px;
+}
+
+.footer-text-group{
+    display: flex;
+    gap: 200px;
+    margin-left: 50px;
+}
+
+.footer-container h4{
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: left;
+    color: #575252;
+}
+
+.footer-container p{
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: #575252;
+}
+
+.copyright{
+    display: flex;
+    gap: 35px;
+    margin-left: 15px;
+}
+
+.copyright p{
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: #575252;
+}
